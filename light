@@ -1,0 +1,31 @@
+#!/bin/bash
+currenttime=$(date +%H:%M)
+
+if [[ "$currenttime" > "17:00" ]]; then
+    if [[ "$currenttime" < "18:00" ]]; then
+      light -Srs "sysfs/leds/chromeos::kbd_backlight" 25
+    fi
+
+elif [[ "$currenttime" > "18:00" ]]; then
+    if [[ "$currenttime" < "19:00" ]]; then
+      light -Srs "sysfs/leds/chromeos::kbd_backlight" 50
+    fi
+
+elif [[ "$currenttime" > "19:00" ]]; then
+    if  [[ "$currenttime" < "20:00" ]]; then
+      light -Srs "sysfs/leds/chromeos::kbd_backlight" 75
+    fi
+
+elif [[ "$currenttime" > "20:00" ]]; then
+    if [[ "$currenttime" < "06:00" ]]; then
+      light -Srs "sysfs/leds/chromeos::kbd_backlight" 100
+    fi
+
+elif [[ "$currenttime" < "07:00" ]]; then
+  if [[ "$currenttime" > "06:00" ]]; then
+    light -Srs "sysfs/leds/chromeos::kbd_backlight" 50
+  fi
+
+else
+  light -Srs "sysfs/leds/chromeos::kbd_backlight" 0
+fi
