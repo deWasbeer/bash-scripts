@@ -1,0 +1,21 @@
+#!/bin/bash
+transmission-remote localhost:9091/transmission/web -t all --start
+#transmission-remote localhost:9091/transmission/web -t 2 -s
+#transmission-remote localhost:9091/transmission/web -t 3 -s
+#transmission-remote localhost:9091/transmission/web -t 4 -s
+#transmission-remote localhost:9091/transmission/web -t 5 -s
+#transmission-remote localhost:9091/transmission/web -t 6 -s
+#transmission-remote localhost:9091/transmission/web -t 7 -s
+#transmission-remote localhost:9091/transmission/web -t 8 -s
+#transmission-remote localhost:9091/transmission/web -t 9 -s
+#transmission-remote localhost:9091/transmission/web -t 10 -s
+#transmission-remote localhost:9091/transmission/web -t 11 -s
+#transmission-remote localhost:9091/transmission/web -t 12 -s
+#transmission-remote localhost:9091/transmission/web -t 13 -s
+#transmission-remote localhost:9091/transmission/web -t 14 -s
+#transmission-remote localhost:9091/transmission/web -t 15 -s
+#transmission-remote localhost:9091/transmission/web -t 16 -s
+#transmission-remote localhost:9091/transmission/web -t 17 -s
+#transmission-remote localhost:9091/transmission/web -t 18 -s
+#transmission-remote localhost:9091/transmission/web -t 19 -s
+#transmission-remote localhost:9091/transmission/web -t 20 -s
