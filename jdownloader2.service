@@ -1,0 +1,14 @@
+[Unit]
+Description=JDownloader2 Headless
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/java -Djava.awt.headless=true -jar /home/planet/snap/jdownloader2/common/JDownloader.jar
+PIDFile=/home/planet/snap/jdownloader2/common/JDownloader.pid
+RemainAfterExit=yes
+User=planet
+Group=planet
+
+[Install]
+WantedBy=multi-user.target
