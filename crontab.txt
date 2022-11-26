@@ -1,0 +1,8 @@
+0 1 * * * sh /home/planet/Headless/nvpn.sh >>/home/planet/Desktop/scheduler.txt
+0 7 * * * sh /home/planet/Headless/nvpns.sh >> /home/planet/Desktop/scheduler.t>
+55 0 * * * systemctl stop jdownloader2.service
+56 0 * * * systemctl start jdownloader2.service
+55 12 * * * systemctl stop jdownloader2.service
+56 12 * * * systemctl start jdownloader2.service
+30 * * * * sh /home/planet/Headless/plexown.sh
+0 2 * * * /usr/sbin/shutdown -h now
